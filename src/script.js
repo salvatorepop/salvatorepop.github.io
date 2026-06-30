@@ -106,8 +106,8 @@ filterBtns.forEach(btn => {
 const navCvBtn = document.getElementById('nav-cv-btn');
 if (navCvBtn) {
   navCvBtn.addEventListener('click', () => {
-     alert('¡Pronto disponible! Sube tu CV a /src/assets/cv/EmmanuelRivera-CV.pdf y actualiza este enlace.');
-     //window.open('/src/assets/cv/Emmanuel Rivera MendozaCV', '_blank');
+     //alert('¡Pronto disponible! Sube tu CV a /src/assets/cv/EmmanuelRivera-CV.pdf y actualiza este enlace.');
+     window.open('/public/cv/Emmanuel Rivera MendozaCV.pdf', '_blank');
   });
 }
 

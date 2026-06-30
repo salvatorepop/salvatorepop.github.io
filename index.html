@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emmanuel Rivera — Ingeniero Full Stack</title>
-  <meta name="description" content="Portafolio de Emmanuel Rivera, Ingeniero Full Stack Java con experiencia análisis de datos." />
+  <meta name="description" content="Portafolio de Emmanuel Rivera, Ingeniero Full Stack Java con experiencia en análisis de datos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
@@ -14,7 +14,22 @@
 
   <!-- ──────── NAV ──────── -->
   <nav id="nav">
-    <a class="nav-logo" href="#inicio">SR<span class="dot">.</span></a>
+
+    <!-- LOGO SVG -->
+    <a class="nav-logo" href="#inicio" aria-label="Emmanuel Rivera">
+      <svg class="logo-svg" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Bracket izquierdo -->
+        <path d="M10 4 L3 18 L10 32" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <!-- Bracket derecho -->
+        <path d="M42 4 L49 18 L42 32" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <!-- E -->
+        <text x="15" y="24" font-family="Syne, sans-serif" font-weight="800" font-size="17" fill="var(--logo-text)">ER</text>
+        <!-- Punto acento -->
+        <circle cx="47" cy="8" r="3" fill="var(--accent)"/>
+      </svg>
+      <span class="logo-name">Emmanuel<span class="logo-dot">.</span></span>
+    </a>
+
     <ul class="nav-links" id="nav-links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#lenguajes">Lenguajes</a></li>
@@ -22,10 +37,21 @@
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <button class="nav-cta" id="nav-cv-btn">Descargar CV</button>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
+
+    <div class="nav-right">
+      <!-- Theme toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+          <span class="toggle-icon sun">☀</span>
+          <span class="toggle-icon moon">🌙</span>
+        </span>
+      </button>
+      <button class="nav-cta" id="nav-cv-btn">Descargar CV</button>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- ──────── HERO ──────── -->
@@ -35,11 +61,12 @@
         <span class="status-dot"></span> Disponible para nuevas oportunidades
       </p>
       <h1 class="hero-name">
-        Emmanuel Salvador<br /><em>Rivera Mendoza</em>
+        Emmanuel<br /><em>Rivera</em>
       </h1>
       <p class="hero-role">Ingeniero Full Stack · Java · Software Escalable</p>
       <p class="hero-desc">
-        Ingeniero Eléctrico-Electrónico que encontró su verdadera pasión diseñando software y transformando datos en soluciones inteligentes.
+        Ingeniero Eléctrico-Electrónico que encontró su verdadera pasión diseñando software
+        y transformando datos en soluciones inteligentes.
       </p>
       <div class="hero-actions">
         <a href="#proyectos" class="btn-primary">Ver proyectos</a>
@@ -48,7 +75,7 @@
       <div class="hero-chips">
         <span>☕ Java 21</span>
         <span>⚙ Spring Boot</span>
-        <span>✈ Aviación → Dev</span>
+        <span>⚡ Análisis de datos</span>
         <span>📍 Edo. México, MX</span>
       </div>
     </div>
@@ -72,19 +99,19 @@
     <div class="section-label">// sobre mí</div>
     <div class="about-grid">
       <div class="about-text">
-        <h2 class="section-heading">De la pista a<br /><em>la terminal</em></h2>
+        <h2 class="section-heading">Ingeniería eléctrica<br /><em>al software</em></h2>
         <p>
-          Coordiné operaciones aeroportuarias de alta demanda donde cada segundo y cada decisión importaba.
-          Esa disciplina me llevó a descubrir la programación como herramienta para resolver problemas reales.
+          Como Ingeniero Eléctrico-Electrónico aprendí que los sistemas complejos necesitan
+          precisión y lógica. Esa base me llevó naturalmente al desarrollo de software.
         </p>
         <p>
-          Hoy construyo aplicaciones web con Java, Spring Boot y tecnologías modernas, siempre buscando
-          arquitectura limpia, código mantenible y experiencias de usuario que realmente funcionen.
+          Hoy construyo aplicaciones web con Java, Spring Boot y tecnologías modernas, siempre
+          buscando arquitectura limpia, código mantenible y experiencias de usuario que funcionen.
         </p>
         <div class="about-stats">
           <div class="stat-box">
             <strong>6+</strong>
-            <span>Años en aviación</span>
+            <span>Años de exp.</span>
           </div>
           <div class="stat-box">
             <strong>2024</strong>
@@ -98,9 +125,9 @@
       </div>
       <div class="about-cards">
         <div class="about-card">
-          <div class="about-card-icon">✈</div>
-          <h4>Aviación</h4>
-          <p>Coordinación de operaciones aeroportuarias y equipos multidisciplinarios bajo presión.</p>
+          <div class="about-card-icon">⚡</div>
+          <h4>Ing. Eléctrica</h4>
+          <p>Base técnica sólida en sistemas eléctricos, electrónica y automatización industrial.</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">☕</div>
@@ -108,9 +135,9 @@
           <p>REST APIs, Spring Boot, bases de datos relacionales y arquitectura orientada a servicios.</p>
         </div>
         <div class="about-card">
-          <div class="about-card-icon">⚡</div>
-          <h4>Automatización</h4>
-          <p>Scripts Python para optimizar procesos administrativos internos en el aeropuerto.</p>
+          <div class="about-card-icon">📊</div>
+          <h4>Análisis de Datos</h4>
+          <p>Automatización de reportes, auditorías y optimización de bases de datos para procesos críticos.</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">🚀</div>
@@ -154,8 +181,8 @@
       <div class="tech-card">
         <div class="tech-icon lang-sql">🗄</div>
         <h4>SQL</h4>
-        <div class="level-bar"><div class="level-fill" style="--pct: 60%"></div></div>
-        <span class="level-label">Intermedio</span>
+        <div class="level-bar"><div class="level-fill" style="--pct: 65%"></div></div>
+        <span class="level-label">Intermedio — Avanzado</span>
         <p>Consultas, joins, subqueries, MySQL y PostgreSQL.</p>
       </div>
 
@@ -264,7 +291,6 @@
     <div class="section-label">// proyectos destacados</div>
     <h2 class="section-heading">Trabajo <em>seleccionado</em></h2>
 
-    <!-- Filtros -->
     <div class="proj-filters">
       <button class="filter-btn active" data-filter="all">Todos</button>
       <button class="filter-btn" data-filter="frontend">Frontend</button>
@@ -274,7 +300,6 @@
 
     <div class="proj-grid" id="proj-grid">
 
-      <!-- P1 -->
       <article class="proj-card" data-cat="frontend">
         <div class="proj-img-wrap">
           <img src="/src/assets/img-proyectos/mensajetotal.png" alt="Syntax Logistics" class="proj-img" />
@@ -295,10 +320,9 @@
         </div>
       </article>
 
-      <!-- P2 -->
       <article class="proj-card" data-cat="frontend">
         <div class="proj-img-wrap">
-          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Mundo+Fifas" alt="Mundo Fifas" class="proj-img" />
+          <img src="https://placehold.co/600x380/1e2330/6d9eeb?text=Mundo+Fifas" alt="Mundo Fifas" class="proj-img" />
           <div class="proj-overlay">
             <a href="https://github.com/Rock2612/Mundo-Fifas" target="_blank" class="proj-link">Ver en GitHub →</a>
           </div>
@@ -316,10 +340,9 @@
         </div>
       </article>
 
-      <!-- P3 -->
       <article class="proj-card" data-cat="backend">
         <div class="proj-img-wrap">
-          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=REST+API" alt="REST API" class="proj-img" />
+          <img src="https://placehold.co/600x380/1e2330/6d9eeb?text=REST+API" alt="REST API" class="proj-img" />
           <div class="proj-overlay">
             <a href="#" class="proj-link">En desarrollo →</a>
           </div>
@@ -337,10 +360,9 @@
         </div>
       </article>
 
-      <!-- P4 -->
       <article class="proj-card" data-cat="backend">
         <div class="proj-img-wrap">
-          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Airport+Automation" alt="Airport Automation" class="proj-img" />
+          <img src="https://placehold.co/600x380/1e2330/6d9eeb?text=Data+Automator" alt="Data Automator" class="proj-img" />
           <div class="proj-overlay">
             <a href="#" class="proj-link">Repositorio privado →</a>
           </div>
@@ -350,18 +372,17 @@
             <span class="proj-tag backend">Automatización</span>
             <span class="proj-year">2024</span>
           </div>
-          <h3>Airport Ops Automator</h3>
-          <p>Scripts Python para automatizar reportes administrativos del aeropuerto, reduciendo tiempo de proceso en un 60%.</p>
+          <h3>Nómina Data Automator</h3>
+          <p>Scripts Python para automatizar auditorías de nómina complementaria y reportes quincenales, reduciendo tiempos operativos en un 60%.</p>
           <div class="proj-stack">
-            <span>Python</span><span>Pandas</span><span>Excel</span><span>Automatización</span>
+            <span>Python</span><span>Pandas</span><span>SQL</span><span>Excel</span>
           </div>
         </div>
       </article>
 
-      <!-- P5 -->
       <article class="proj-card" data-cat="fullstack">
         <div class="proj-img-wrap">
-          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Task+Manager" alt="Task Manager" class="proj-img" />
+          <img src="https://placehold.co/600x380/1e2330/6d9eeb?text=Task+Manager" alt="Task Manager" class="proj-img" />
           <div class="proj-overlay">
             <a href="#" class="proj-link">En desarrollo →</a>
           </div>
@@ -379,10 +400,9 @@
         </div>
       </article>
 
-      <!-- P6 -->
       <article class="proj-card" data-cat="fullstack">
         <div class="proj-img-wrap">
-          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=E-Commerce" alt="E-Commerce" class="proj-img" />
+          <img src="https://placehold.co/600x380/1e2330/6d9eeb?text=E-Commerce" alt="E-Commerce" class="proj-img" />
           <div class="proj-overlay">
             <a href="#" class="proj-link">En desarrollo →</a>
           </div>
@@ -406,31 +426,30 @@
   <!-- ──────── TRAYECTORIA ──────── -->
   <section id="trayectoria" class="journey reveal">
     <div class="section-label">// trayectoria</div>
-    <h2 class="section-heading">De la pista <em>al código</em></h2>
-    
+    <h2 class="section-heading">De los circuitos <em>al código</em></h2>
     <div class="timeline">
       <div class="tl-item active">
         <div class="tl-year">Hoy</div>
         <div class="tl-dot pulse"></div>
         <div class="tl-content">
           <h4>Buscando mi primer rol profesional</h4>
-          <p>Listo para construir software de alto impacto y seguir creciendo como ingeniero Full Stack.</p>
+          <p>Listo para construir software de alto impacto y seguir creciendo como Ingeniero Full Stack.</p>
         </div>
       </div>
       <div class="tl-item">
-        <div class="tl-year">2023-2026</div>
+        <div class="tl-year">2023–2026</div>
         <div class="tl-dot"></div>
         <div class="tl-content">
           <h4>Analista</h4>
-          <p>Optimicé bases de datos para procesos quincenales, automatizé reportes y auditorías de nómina complementaria, actualicé información institucional y accesos en sistemas críticos, y brindé soporte en la inicialización de procesos y validación de aplicaciones.</p>
+          <p>Optimicé bases de datos para procesos quincenales, automaticé reportes y auditorías de nómina complementaria, y brindé soporte en la inicialización de procesos y validación de aplicaciones.</p>
         </div>
       </div>
       <div class="tl-item">
-        <div class="tl-year">2019-2023</div>
+        <div class="tl-year">2019–2023</div>
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <h4>Técnico profesional</h4>
-          <p>Desarrollé scripts para optimizar procesos administrativos del aeropuerto. Primer contacto real con la programación.</p>
+          <h4>Técnico Profesional</h4>
+          <p>Desarrollé scripts para optimizar procesos administrativos. Primer contacto real con la programación como herramienta de productividad.</p>
         </div>
       </div>
       <div class="tl-item">
@@ -438,10 +457,9 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <h4>Electricista</h4>
-          <p>Realicé instalaciones eléctricas residenciales, corregí fallas en sistemas de iluminación y distribución, aseguré el cumplimiento de normas de seguridad eléctrica, y brindé mantenimiento preventivo para garantizar la continuidad operativa de equipos y sistemas.</p>
+          <p>Instalaciones eléctricas residenciales, corrección de fallas y mantenimiento preventivo de sistemas de distribución.</p>
         </div>
       </div>
-      
     </div>
   </section>
 
@@ -478,7 +496,16 @@
   <!-- ──────── FOOTER ──────── -->
   <footer class="footer">
     <div class="footer-inner">
-      <a class="nav-logo" href="#inicio">SR<span class="dot">.</span></a>
+      <!-- Logo compacto en footer -->
+      <a class="nav-logo" href="#inicio" aria-label="Emmanuel Rivera">
+        <svg class="logo-svg logo-svg--sm" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 4 L3 18 L10 32" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M42 4 L49 18 L42 32" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="15" y="24" font-family="Syne, sans-serif" font-weight="800" font-size="17" fill="var(--logo-text)">ER</text>
+          <circle cx="47" cy="8" r="3" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-name">Emmanuel<span class="logo-dot">.</span></span>
+      </a>
       <nav>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#lenguajes">Lenguajes</a>

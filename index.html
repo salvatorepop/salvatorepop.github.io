@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Rivera — Ingeniero Full Stack</title>
+  <meta name="description" content="Portafolio de Emmanuel Rivera, Ingeniero Full Stack Java con experiencia análisis de datos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ──────── NAV ──────── -->
+  <nav id="nav">
+    <a class="nav-logo" href="#inicio">SR<span class="dot">.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#lenguajes">Lenguajes</a></li>
+      <li><a href="#herramientas">Herramientas</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-cta" id="nav-cv-btn">Descargar CV</button>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ──────── HERO ──────── -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span class="status-dot"></span> Disponible para nuevas oportunidades
+      </p>
+      <h1 class="hero-name">
+        Emmanuel Salvador<br /><em>Rivera Mendoza</em>
+      </h1>
+      <p class="hero-role">Ingeniero Full Stack · Java · Software Escalable</p>
+      <p class="hero-desc">
+        Ingeniero Eléctrico-Electrónico que encontró su verdadera pasión diseñando software y transformando datos en soluciones inteligentes.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-ghost">Hablemos</a>
+      </div>
+      <div class="hero-chips">
+        <span>☕ Java 21</span>
+        <span>⚙ Spring Boot</span>
+        <span>✈ Aviación → Dev</span>
+        <span>📍 Edo. México, MX</span>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="photo-frame">
+        <img src="/src/assets/perfil.jpeg" alt="Emmanuel Rivera" class="hero-photo" />
+      </div>
+      <div class="photo-badge badge-top">
+        <span class="badge-num">6+</span>
+        <span class="badge-lab">Años Exp.</span>
+      </div>
+      <div class="photo-badge badge-bot">
+        <span class="badge-num">6</span>
+        <span class="badge-lab">Proyectos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────── SOBRE MÍ ──────── -->
+  <section id="sobre-mi" class="about reveal">
+    <div class="section-label">// sobre mí</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading">De la pista a<br /><em>la terminal</em></h2>
+        <p>
+          Coordiné operaciones aeroportuarias de alta demanda donde cada segundo y cada decisión importaba.
+          Esa disciplina me llevó a descubrir la programación como herramienta para resolver problemas reales.
+        </p>
+        <p>
+          Hoy construyo aplicaciones web con Java, Spring Boot y tecnologías modernas, siempre buscando
+          arquitectura limpia, código mantenible y experiencias de usuario que realmente funcionen.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <strong>6+</strong>
+            <span>Años en aviación</span>
+          </div>
+          <div class="stat-box">
+            <strong>2024</strong>
+            <span>Transición al dev</span>
+          </div>
+          <div class="stat-box">
+            <strong>100%</strong>
+            <span>Autodidacta</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">✈</div>
+          <h4>Aviación</h4>
+          <p>Coordinación de operaciones aeroportuarias y equipos multidisciplinarios bajo presión.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">☕</div>
+          <h4>Backend Java</h4>
+          <p>REST APIs, Spring Boot, bases de datos relacionales y arquitectura orientada a servicios.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">⚡</div>
+          <h4>Automatización</h4>
+          <p>Scripts Python para optimizar procesos administrativos internos en el aeropuerto.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🚀</div>
+          <h4>Objetivo</h4>
+          <p>Construir soluciones escalables que generen impacto real con código elegante y bien estructurado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────── LENGUAJES ──────── -->
+  <section id="lenguajes" class="tech-section reveal">
+    <div class="section-label">// lenguajes de programación</div>
+    <h2 class="section-heading">Lenguajes</h2>
+    <div class="tech-grid" id="lang-grid">
+
+      <div class="tech-card">
+        <div class="tech-icon lang-java">☕</div>
+        <h4>Java</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 72%"></div></div>
+        <span class="level-label">Intermedio — Avanzado</span>
+        <p>Java 21, POO, colecciones, streams, lambdas.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon lang-js">JS</div>
+        <h4>JavaScript</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 58%"></div></div>
+        <span class="level-label">Intermedio</span>
+        <p>ES6+, DOM manipulation, fetch API, async/await.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon lang-python">🐍</div>
+        <h4>Python</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 40%"></div></div>
+        <span class="level-label">Básico — Intermedio</span>
+        <p>Scripts de automatización y procesamiento de datos.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon lang-sql">🗄</div>
+        <h4>SQL</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 60%"></div></div>
+        <span class="level-label">Intermedio</span>
+        <p>Consultas, joins, subqueries, MySQL y PostgreSQL.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon lang-html">H5</div>
+        <h4>HTML5</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 75%"></div></div>
+        <span class="level-label">Avanzado</span>
+        <p>Semántica, accesibilidad, SEO on-page.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon lang-css">CSS</div>
+        <h4>CSS3</h4>
+        <div class="level-bar"><div class="level-fill" style="--pct: 70%"></div></div>
+        <span class="level-label">Avanzado</span>
+        <p>Flexbox, Grid, animaciones, diseño responsivo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────── HERRAMIENTAS ──────── -->
+  <section id="herramientas" class="tech-section reveal">
+    <div class="section-label">// herramientas & frameworks</div>
+    <h2 class="section-heading">Herramientas</h2>
+    <div class="tools-grid" id="tools-grid">
+
+      <div class="tool-card">
+        <span class="tool-ico">⚙</span>
+        <div>
+          <strong>Spring Boot</strong>
+          <p>Framework principal para APIs REST y microservicios en Java.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🔗</span>
+        <div>
+          <strong>Git / GitHub</strong>
+          <p>Control de versiones, ramas, pull requests y trabajo colaborativo.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🧩</span>
+        <div>
+          <strong>Maven</strong>
+          <p>Gestión de dependencias y ciclo de vida de proyectos Java.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🏃</span>
+        <div>
+          <strong>SCRUM / Agile</strong>
+          <p>Sprints, planning, retrospectivas y colaboración en equipo.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🎨</span>
+        <div>
+          <strong>Bootstrap</strong>
+          <p>Componentes responsive y sistema de grids para UI rápida.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🗄</span>
+        <div>
+          <strong>MySQL / PostgreSQL</strong>
+          <p>Modelado de bases de datos, índices y transacciones.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🛡</span>
+        <div>
+          <strong>JDBC / JPA</strong>
+          <p>Persistencia de datos y mapeo objeto-relacional.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">🖥</span>
+        <div>
+          <strong>IntelliJ IDEA</strong>
+          <p>IDE principal para desarrollo Java con alta productividad.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-ico">📐</span>
+        <div>
+          <strong>Figma</strong>
+          <p>Wireframes, diseño de UI y prototipado de flujos de usuario.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────── PROYECTOS ──────── -->
+  <section id="proyectos" class="projects reveal">
+    <div class="section-label">// proyectos destacados</div>
+    <h2 class="section-heading">Trabajo <em>seleccionado</em></h2>
+
+    <!-- Filtros -->
+    <div class="proj-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+
+    <div class="proj-grid" id="proj-grid">
+
+      <!-- P1 -->
+      <article class="proj-card" data-cat="frontend">
+        <div class="proj-img-wrap">
+          <img src="/src/assets/img-proyectos/mensajetotal.png" alt="Syntax Logistics" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="https://github.com/enriqueperezdevmx-coder/Equipo_Syntax_Error" target="_blank" class="proj-link">Ver en GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag frontend">Frontend</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3>Syntax Logistics</h3>
+          <p>Plataforma de entrega express para CDMX. Desarrollo de UI completa, diseño responsivo e integración de flujos de usuario con metodología SCRUM.</p>
+          <div class="proj-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- P2 -->
+      <article class="proj-card" data-cat="frontend">
+        <div class="proj-img-wrap">
+          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Mundo+Fifas" alt="Mundo Fifas" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="https://github.com/Rock2612/Mundo-Fifas" target="_blank" class="proj-link">Ver en GitHub →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag frontend">Frontend</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3>Mundo Fifas</h3>
+          <p>Comunidad futbolera con estructura semántica limpia, CSS custom y diseño responsivo para todos los dispositivos.</p>
+          <div class="proj-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Git</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- P3 -->
+      <article class="proj-card" data-cat="backend">
+        <div class="proj-img-wrap">
+          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=REST+API" alt="REST API" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="#" class="proj-link">En desarrollo →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag backend">Backend</span>
+            <span class="proj-year">2025</span>
+          </div>
+          <h3>Inventory REST API</h3>
+          <p>API RESTful para gestión de inventarios con autenticación, validaciones y documentación de endpoints con Postman.</p>
+          <div class="proj-stack">
+            <span>Java 21</span><span>Spring Boot</span><span>MySQL</span><span>Maven</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- P4 -->
+      <article class="proj-card" data-cat="backend">
+        <div class="proj-img-wrap">
+          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Airport+Automation" alt="Airport Automation" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="#" class="proj-link">Repositorio privado →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag backend">Automatización</span>
+            <span class="proj-year">2024</span>
+          </div>
+          <h3>Airport Ops Automator</h3>
+          <p>Scripts Python para automatizar reportes administrativos del aeropuerto, reduciendo tiempo de proceso en un 60%.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>Pandas</span><span>Excel</span><span>Automatización</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- P5 -->
+      <article class="proj-card" data-cat="fullstack">
+        <div class="proj-img-wrap">
+          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=Task+Manager" alt="Task Manager" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="#" class="proj-link">En desarrollo →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag fullstack">Full Stack</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3>Task Manager App</h3>
+          <p>Aplicación de gestión de tareas con panel de usuario, autenticación JWT y frontend dinámico integrado con Spring Boot.</p>
+          <div class="proj-stack">
+            <span>Java</span><span>Spring Boot</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- P6 -->
+      <article class="proj-card" data-cat="fullstack">
+        <div class="proj-img-wrap">
+          <img src="https://placehold.co/600x380/0d0d14/7c5cfc?text=E-Commerce" alt="E-Commerce" class="proj-img" />
+          <div class="proj-overlay">
+            <a href="#" class="proj-link">En desarrollo →</a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-tag fullstack">Full Stack</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>Tienda en línea con carrito de compras, gestión de productos y panel de administración. Arquitectura MVC con Spring Boot.</p>
+          <div class="proj-stack">
+            <span>Java</span><span>Spring Boot</span><span>HTML/CSS</span><span>PostgreSQL</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ──────── TRAYECTORIA ──────── -->
+  <section id="trayectoria" class="journey reveal">
+    <div class="section-label">// trayectoria</div>
+    <h2 class="section-heading">De la pista <em>al código</em></h2>
+    
+    <div class="timeline">
+      <div class="tl-item active">
+        <div class="tl-year">Hoy</div>
+        <div class="tl-dot pulse"></div>
+        <div class="tl-content">
+          <h4>Buscando mi primer rol profesional</h4>
+          <p>Listo para construir software de alto impacto y seguir creciendo como ingeniero Full Stack.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2023-2026</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Analista</h4>
+          <p>Optimicé bases de datos para procesos quincenales, automatizé reportes y auditorías de nómina complementaria, actualicé información institucional y accesos en sistemas críticos, y brindé soporte en la inicialización de procesos y validación de aplicaciones.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2019-2023</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Técnico profesional</h4>
+          <p>Desarrollé scripts para optimizar procesos administrativos del aeropuerto. Primer contacto real con la programación.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Electricista</h4>
+          <p>Realicé instalaciones eléctricas residenciales, corregí fallas en sistemas de iluminación y distribución, aseguré el cumplimiento de normas de seguridad eléctrica, y brindé mantenimiento preventivo para garantizar la continuidad operativa de equipos y sistemas.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ──────── CONTACTO ──────── -->
+  <section id="contacto" class="contact reveal">
+    <div class="section-label">// contacto</div>
+    <h2 class="section-heading">Construyamos algo<br /><em>juntos</em></h2>
+    <p class="contact-sub">Estoy buscando mi primer rol profesional como Ingeniero Full Stack. Si tienes un proyecto o posición abierta, me encantaría escucharte.</p>
+    <div class="contact-links">
+      <a href="mailto:salvatorecch@gmail.com" class="contact-link">
+        <span class="contact-ico">✉</span>
+        <div>
+          <strong>Email</strong>
+          <span>salvatorecch@gmail.com</span>
+        </div>
+      </a>
+      <a href="https://github.com/salvatorepop" target="_blank" class="contact-link">
+        <span class="contact-ico">⌥</span>
+        <div>
+          <strong>GitHub</strong>
+          <span>SalvadorRivera-dev</span>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/emmanuel-salvador-rivera-mendoza-442092142/" target="_blank" class="contact-link">
+        <span class="contact-ico">in</span>
+        <div>
+          <strong>LinkedIn</strong>
+          <span>Emmanuel Rivera</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ──────── FOOTER ──────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="nav-logo" href="#inicio">SR<span class="dot">.</span></a>
+      <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#lenguajes">Lenguajes</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 Emmanuel Rivera — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/src/script.js"></script>
+</body>
+</html>
